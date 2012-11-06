@@ -1,0 +1,12 @@
+%h1
+  People
+%table
+  %tr
+    %th
+      Name
+    %th
+      Gender
+  - @people.each do |p|
+    %tr
+      %td=p.name
+      %td=p.gender
